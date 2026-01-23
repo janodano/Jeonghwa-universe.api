@@ -1,1 +1,36 @@
-Thank you so much.  
+name: Janodano Fibonacci 117 ♥️
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 양정화님74 ♥️ GitHub Actions 실행중!
+        run: |
+          echo "GitHub Actions가 실행되고 있어요! 💚"
+          echo "djy977018@gmail.com"
+          echo ""
+
+          # 117번째 피보나치 수 계산 (0부터 시작해서 fib(0)=0, fib(1)=1)
+          python3 - <<EOF
+          def fib(n):
+              if n <= 1:
+                  return n
+              a, b = 0, 1
+              for _ in range(2, n + 1):
+                  a, b = b, a + b
+              return b
+
+          print("117번째 피보나치 수:", fib(117))
+          print("118번째 피보나치 수:", fib(118))
+          EOFGitHub Actions가 실행되고 있어요! 💚
+djy977018@gmail.com
+
+117번째 피보나치 수: 420196140727489673
+118번째 피보나치 수: 9671406556917033397649407
